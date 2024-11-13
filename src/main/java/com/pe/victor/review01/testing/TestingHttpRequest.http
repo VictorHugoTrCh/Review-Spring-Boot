@@ -1,0 +1,36 @@
+### POST request with json body
+POST http://localhost:8080/patients
+Content-Type: application/json
+
+{
+  "firstname": "Luis",
+  "lastname": "Trujillo",
+  "id": "48476424",
+  "address": "Madrid",
+  "phone": "632898466",
+  "email": "ltrujilllocharalla@gmail.com"
+}
+### PUT request with json body
+PUT http://localhost:8080/patients
+Content-Type: application/json
+
+{
+"firstname": "Victor",
+"lastname": "Charalla",
+"id": "48476424",
+"address": "Manchester",
+"phone": "632898466",
+"email": "vtrujilllocharalla@gmail.com"
+}
+
+### GET request with parameter
+GET http://localhost:8080/patients
+Accept: application/json
+
+### GET for Id request with parameter
+GET http://localhost:8080/patients/6
+Accept: application/json
+
+### DELETE for Id request with parameter
+DELETE http://localhost:8080/patients/1
+Accept: application/json
